@@ -1,0 +1,43 @@
+<h1>Employee Data</h1>
+
+<p>This component demonstrates fetching Employee data from the server.</p>
+
+<p *ngIf="!empList"><em>Loading...</em></p>
+
+<p>
+  <a [routerLink]="['/register-employee']">Create New</a>
+</p>
+
+<table class='table table-striped'  *ngIf="empList">
+  <thead>
+    <tr>
+      <th>EmployeeId</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Department</th>
+      <th>City</th>
+      <th>DOJ</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--|paginate :{ id:'list-pagination',totalItems:TotalRecords,itemsPerPage:2,currentPage:page}-->
+    <tr *ngFor="let emp of empList">
+      <td>{{ emp.employeeId }}</td>
+      <td>{{ emp.name }}</td>
+      <td>{{ emp.gender }}</td>
+      <td>{{ emp.department }}</td>
+      <td>{{ emp.city }}</td>
+      <td>{{emp.doj| date:"dd/MM/yyyy" }} </td>
+
+      <td>
+        <a [routerLink]="['/employee/edit/', emp.employeeId]">Edit</a> |
+        <a [routerLink]="" (click)="delete(emp.employeeId)">Delete</a>
+
+    </tr>
+  </tbody>
+</table>
+<!--<div class="d-flex justify-content-center">
+  <pagination-controls  id="list-pagination" maxSize=5 directionLinks=true (pagechange)="page=$event" >
+  </pagination-controls>
+</div>-->
