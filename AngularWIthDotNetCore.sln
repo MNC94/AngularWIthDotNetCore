@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularWIthDotNetCore", "AngularWIthDotNetCore\AngularWIthDotNetCore.csproj", "{3C4225D8-FE81-4884-AE2E-4CAAFFB60CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudAPI", "CrudAPI\CrudAPI.csproj", "{3F8EA36D-6525-484D-AE9E-639DAE7E435D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C4225D8-FE81-4884-AE2E-4CAAFFB60CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4225D8-FE81-4884-AE2E-4CAAFFB60CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4225D8-FE81-4884-AE2E-4CAAFFB60CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4225D8-FE81-4884-AE2E-4CAAFFB60CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8EA36D-6525-484D-AE9E-639DAE7E435D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8EA36D-6525-484D-AE9E-639DAE7E435D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8EA36D-6525-484D-AE9E-639DAE7E435D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8EA36D-6525-484D-AE9E-639DAE7E435D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FE9F4D4-13C6-416D-BE40-AFA6239A1DEA}
+	EndGlobalSection
+EndGlobal
